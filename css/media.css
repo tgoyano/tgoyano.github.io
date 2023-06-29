@@ -1,0 +1,607 @@
+/* 
+320px - 480px: dispositivos moveis
+481px - 768px: tablets, Ipads
+769px - 1024px: telas pequenas, laptops, tablets em paisagem
+1025px - 1200px: desktops
+1201px - 1600px: telas grandes widescreen
+1601px - a cima: TV e telas especificas
+*/
+
+@media screen and (max-width: 1024px) {
+
+    /* #region botao */
+    .btnMenu {
+        font-size: 50px;
+        padding: 10px;
+        color: white;
+        transition: .3s;
+        display: block;
+    }
+
+    .btnMenu:hover {
+        color: #a46a0e;
+        transition: .3s;
+    }
+
+    /* #endregion */
+
+    /* #region navbar */
+    .navbar {
+        height: 70px;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        align-items: center;
+
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    ul.open {
+        overflow: visible;
+    }
+
+    .navbar li {
+        padding: 0 8px;
+    }
+
+    .navbar li a {
+        height: 70px;
+        line-height: 70px;
+        padding: 20px 25px;
+    }
+
+    .navbar li a:hover:not(.sub a:hover) {
+        background-color: rgba(2, 250, 43, 0.726);
+    }
+
+    ul .sub {
+        position: absolute;
+        display: none;
+        min-height: 160px;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0;
+        text-align: center;
+        right: 150px;
+    }
+
+    /* #endregion */
+
+    /* #region cursos */
+    .curso-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .curso-inner h1 {
+        font-size: 4em;
+        font-weight: 100;
+        padding-top: .5em;
+    }
+
+    .curso-inner h2 {
+        margin: 6rem 2.5em 3.8rem auto;
+        width: 60%;
+        font-size: 3.5em;
+    }
+
+    .curso-inner h5 {
+        width: 45%;
+        margin-left: auto;
+        margin-right: 2rem;
+        font-size: 1.2em;
+        text-align: center;
+        color: #cca05a;
+    }
+
+    .botao1 {
+        margin: 2rem 6.8rem 0 auto;
+    }
+
+    /* #endregion */
+
+    /* #region servico */
+    #servico {
+        padding: 3.5em 0;
+    }
+
+    .cardTitulo {
+        line-height: 50px;
+    }
+
+    .cardTitulo h4 {
+        font-size: 1.7em;
+    }
+
+    .cardpreco {
+        height: 70px;
+    }
+
+    .cardpreco h4 {
+        font-size: 2.5em;
+    }
+
+
+    /* #endregion */
+
+    /* #region sobrestudio */
+
+    .sobre {
+        width: auto;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sobre-container {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .sobre-container h2 {
+        margin-top: -23rem;
+    }
+
+    .scima {
+        width: 70%;
+        margin: 2rem 0 .8rem 0;
+    }
+
+    .sbaixo {
+        width: 70%;
+        text-align: center;
+        margin-bottom: -40px;
+    }
+
+    .sobrebtnDefault {
+       
+        margin-top: 5em;
+    }
+
+    /* #endregion */
+
+    /* #region sobrenail */
+    .desc-container {
+        width: 55%;
+        margin-top: 2rem;
+        font-size: 10px;
+        margin-right: 1.5rem;
+    }
+
+    /* #endregion */
+
+    /* #region contato */
+    iframe {
+        width: 600px;
+        height: 500px;
+    }
+
+    .localizacao {
+        padding: 1.5rem 1rem;
+    }
+
+    .local {
+        width: 30%;
+        font-size: .8em;
+    }
+
+    .mapa {
+        top: 2em;
+        right: 2em;
+    }
+
+    /* #endregion */
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* #region cursos */
+    
+    .curso-inner h1 {
+        font-size: 3.5em;
+        position: relative;
+        font-weight: 100;
+        padding-top: .5em;
+    }
+
+    .curso-inner h2 {
+        margin: 5rem 3rem 3rem auto;
+        width: 60%;
+        font-size: 4.5em;
+        font-size: 3em;
+    }
+
+    .curso-inner h5 {
+        margin-right: 1em;
+        margin-bottom: -1em;
+        font-size: 1em;
+    }
+
+    .botao1 {
+        margin-right: 6em;
+    }
+
+    /* #endregion */
+
+    /* #region servico */
+    .card {
+        width: 40%;
+    }
+
+    /* #endregion */
+    
+    /* #region sobre  */
+
+    .scima {
+        width: 70%;
+        font-size: 20px;
+
+    }
+
+    .sbaixo {
+        width: 70%;
+        font-size: 20px;
+        margin-bottom: -3em;
+    }
+
+    /* #endregion */
+
+    /* #region Sobrenail */
+
+    .desc-container {
+        width: 55%;
+        margin-top: 2rem;
+        font-size: 8px;
+        margin-right: 2rem;
+    }
+
+    /* #endregion */
+
+    /* #region contato */
+    iframe {
+        width: 400px;
+        height: 450px;
+    }
+
+    .local {
+        width: 40%;
+        font-size: .8em;
+        
+    }
+
+    .mapa{
+        top: 9em;
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+    .footer-container a span {
+        display: none;
+    }
+
+    .footer-container a i {
+        font-size: 3.5rem;
+    }
+
+    /* #endregion */
+
+}
+
+@media screen and (max-width: 480px) {
+        /* #region navbar */
+
+        .BtnDefault{
+            margin: 0px 0 0;
+        }
+    
+        /* #endregion */
+
+    /* #region cursos */
+
+    .curso-inner h1 {
+        font-size: 2em;
+        padding-top: 3em;
+    }
+
+    .curso-inner h2 {
+        margin: 7rem 2rem 3.5rem auto;
+        width: 80%;
+        font-size: 2em;
+    }
+
+    .curso-inner h5 {
+        width: 50%;
+        margin-right: 1em;
+        margin-bottom: -3em;
+        font-size: 0.9em;
+    }
+
+    .botao1 {
+        margin-right: 4em;
+        
+    }
+
+    .BtnDefault {
+        background-color: #a46a0e;
+        padding: .8em 1.5em;
+        color: white;
+        margin: 2.5em auto;
+        border: none;
+        border-radius: 8px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    /* #endregion */
+
+    /* #region servico */
+    .cardProd {
+        width: 90%;
+    }
+
+    /* #endregion */
+
+
+    /* #region services */
+
+    .services-inner {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .services-inner table th {
+        font-size: 1.5em;
+    }
+
+    .services-inner table td {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+
+    /* #region domain */
+    .domain-container li input[type=text] {
+        width: 100%;
+    }
+
+    /* #endregion */
+
+    /* #region sobre  */
+    .sobre-container {
+        font-size: .8em;
+    }
+
+
+    .scima {
+        width: 70%;
+        font-size: 1.3em;
+
+    }
+
+    .sbaixo {
+        width: 70%;
+        font-size: 1.3em;
+
+    }
+
+    /* #endregion */
+
+    /* #region sobrenail */
+    #sobrenail{
+        font-size: .8em;
+    }
+
+    .sobrenail-container h2{
+        margin-left: 2.5em;
+        padding-top: 3em;
+        margin-bottom: -1em;
+        font-size: 4em;
+    }
+
+   
+    .desc-container{
+        width: 60%;
+        font-size: .5em;
+        padding-top: 4rem;
+    }
+    /* #endregion */
+
+    /* #region contact */
+    #contato {
+        font-size: .8em;
+        padding-bottom: 85em;
+    }
+    
+    .local {
+        width: 100%;
+        font-size: .8em;
+    }
+
+
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+
+    .mapa {
+        top: 55em;
+        right: 3.2em;
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    .footer-container ul {
+        display: none;
+    }
+
+    .footer-container a{
+        display: none;
+    }
+
+    /* #endregion */
+
+}
+
+@media screen and (max-width: 425px) {
+    /* #region navbar */
+
+    .BtnDefault{
+        margin: 0px 0 0;
+    }
+
+    /* #endregion */
+
+/* #region cursos */
+
+.curso-inner h1 {
+    font-size: 2em;
+    padding-top: 3em;
+}
+
+.curso-inner h2 {
+    margin: 5em 2rem 3.5rem auto;
+    width: 80%;
+    font-size: 2em;
+}
+
+.curso-inner h5 {
+    width: 50%;
+    margin-right: 1em;
+    margin-bottom: -3em;
+    font-size: 0.9em;
+}
+
+.botao1 {
+    margin-right: 3em;
+    
+}
+
+.BtnDefault {
+    background-color: #a46a0e;
+    padding: .8em 1.5em;
+    color: white;
+    margin: 2.5em auto;
+    border: none;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region servico */
+.cardProd {
+    width: 90%;
+}
+
+/* #endregion */
+
+
+/* #region services */
+
+.services-inner {
+    width: 100%;
+    padding: 0 1em;
+}
+
+.services-inner table th {
+    font-size: 1.5em;
+}
+
+.services-inner table td {
+    font-size: 1.2em;
+}
+
+/* #endregion */
+
+
+/* #region domain */
+.domain-container li input[type=text] {
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region sobre  */
+.sobre-container {
+    font-size: .8em;
+}
+
+
+.scima {
+    width: 70%;
+    font-size: 1.3em;
+
+}
+
+.sbaixo {
+    width: 70%;
+    font-size: 1.3em;
+
+}
+
+/* #endregion */
+
+/* #region sobrenail */
+#sobrenail{
+    font-size: .8em;
+}
+
+.sobrenail-container h2{
+    margin-left: 2.5em;
+    padding-top: 3em;
+    margin-bottom: -4em;
+    font-size: 3em;
+}
+
+
+.desc-container{
+    width: 60%;
+    font-size: .5em;
+    padding-top: 4rem;
+}
+/* #endregion */
+
+/* #region contact */
+#contato {
+    font-size: .8em;
+    padding-bottom: 85em;
+}
+
+.local {
+    width: 100%;
+    font-size: .8em;
+}
+
+
+iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.mapa {
+    top: 55em;
+    right: 1em;
+}
+
+/* #endregion */
+
+/* #region footer */
+
+.footer-container ul {
+    display: none;
+}
+
+.footer-container a{
+    display: none;
+}
+
+/* #endregion */
+
+}
